@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>materialize_templates_examples</title>
+
+  <!-- Favicons-->
+  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <!-- Favicons-->
+  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+  <!-- For iPhone -->
+  <meta name="msapplication-TileColor" content="#00bcd4">
+  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+  <!-- CORE CSS-->
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!-- Custome CSS-->
+  <link href="css/custom/custom.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+  <link href="js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+</head>
+
+<body>
+
+  <!-- Nav Bar top
+  ================================================== -->
+  <nav class="green"><!-- brown yellow green blue red teal -->
+    <div class="nav-wrapper container">
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="icon ion-navicon"></i></a>
+      <a href="index.html" class="brand-logo">
+        Project
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="#!" class="waves-effect waves-light" target="_blank">Link 1</a>
+        </li>
+        <li>
+          <a href="#!" class="waves-effect">link 2</a>
+        </li>
+        <li>
+          <a href="#!">link 3</a>
+        </li>
+        <li>
+          <a href="#!">link 4</a>
+        </li>
+      </ul>
+      <ul id="slide-out" class="side-nav">
+        <li>
+          <a href="#!">Link 1</a>
+        </li>
+        <li>
+          <a href="#!">Link 2</a>
+        </li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li>
+          <a class="waves-effect" href="#!">Link 3</a>
+        </li>
+        <li>
+          <a href="#!">Link 4</a>
+        </li>
+      </ul>
+    </div>
+  </nav><!-- Nav Bar top end -->
+
+  <!-- Container
+  ================================================== -->
+  <div class="container">
+
+    <!-- Card
+    ================================================== -->
+    <div class="card">
+      <div class="card-content">
+        <div align="center">
+          <h1>Card</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Card end-->
+
+    <!-- Card
+    ================================================== -->
+    <div class="card">
+      <div class="card-content">
+        <div align="center">
+          <h1>Breadcrumbs</h1>
+        </div>
+        <!-- Breadcrumbs
+        ================================================== -->
+        <div id="breadcrumbs-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <h5 class="breadcrumbs-title">Breadcrumbs title</h5>
+                <ol class="breadcrumbs">
+                  <li><a href="index.html">Template 1</a></li>
+                  <li><a href="#">Template 2</a></li>
+                  <li class="active">Template 3</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Breadcrumbs end-->
+      </div>
+    </div>
+    <!-- Card end-->
+
+    <!-- Card
+    ================================================== -->
+    <div class="card">
+      <div class="card-content">
+        <!-- Headers
+        ================================================== -->
+        <div align="center">
+          <h1>Headers</h1>
+        </div>
+        <br />
+        <h1>Example h1</h1>
+        <h2>Example h2</h2>
+        <h3>Example h3</h3>
+        <h4>Example h4</h4>
+        <h5>Example h5</h5>
+        <h6>Example h6</h6>
+        <!-- End of Headers -->
+      </div>
+    </div>
+    <!-- Card end-->
+
+    <!-- Card
+    ================================================== -->
+    <div class="card">
+      <div class="card-content">
+
+        <!-- forms
+        ================================================== -->
+        <div align="center">
+          <h1>Forms</h1>
+        </div>
+
+        <p class="caption">Forms are the standard way to receive user inputted data. The transitions and smoothness of these elements are very important because of the inherent user interaction associated with forms.</p>
+
+        <h4 class="header">Input fields</h4>
+
+        <div class="input-field">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+        <div class="input-field">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+        <div class="input-field">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+        <!--div class="input-field">
+          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+          <label for="disabled">Disabled</label>
+        </div-->
+
+        <h4 class="header">Icon Prefixes</h4>
+
+        <div class="input-field">
+          <i class="mdi-action-account-circle prefix"></i>
+          <input id="icon_prefix3" type="text" class="validate">
+          <label for="icon_prefix3">First Name</label>
+        </div>
+        <div class="input-field">
+          <i class="mdi-communication-phone prefix"></i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone">Telephone</label>
+        </div>
+
+        <br />
+        <div class="divider"></div>
+        <br />
+
+        <h4 class="header">Textarea</h4>
+
+        <div class="input-field">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Textarea</label>
+        </div>
+
+        <div class="input-field">
+          <i class="mdi-editor-mode-edit prefix"></i>
+          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <label for="icon_prefix2" class="">Message</label>
+        </div>
+
+        <br />
+        <div class="divider"></div>
+        <br />
+
+        <h4 class="header">Input Select</h4>
+
+        <div class="input-field">
+          <label>Materialize Select</label>
+          <br />
+          <select>
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+
+        <br />
+
+        <div class="input-field">
+          <select multiple>
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+          <label>Materialize Multiple Select</label>
+        </div>
+
+        <br />
+
+        <div class="input-field">
+          <select>
+            <option value="" disabled >Choose your option</option>
+            <option value="1">Option 1</option>
+            <option value="2" selected>Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+          <label>Materialize Select optgroups with selected</label>
+        </div>
+
+        <br />
+
+        <label>Browser Select</label>
+        <select class="browser-default">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+
+        <br />
+
+        <h4 class="header">Radio Buttons</h4>
+        <p>
+          <input name="group1" type="radio" id="test1" />
+          <label for="test1">Red</label>
+        </p>
+        <p>
+          <input name="group1" type="radio" id="test2" />
+          <label for="test2">Yellow</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="test3" />
+          <label for="test3">Green</label>
+        </p>
+        <p>
+          <input name="group1" type="radio" id="test4" disabled="disabled" />
+          <label for="test4">Brown</label>
+        </p>
+
+        <br />
+        <div class="divider"></div>
+        <br />
+
+        <h4 class="header">Checkboxes</h4>
+        
+        <p>
+          <input type="checkbox" id="test5" />
+          <label for="test5">Red</label>
+        </p>
+        <p>
+          <input type="checkbox" id="test6" checked="checked" />
+          <label for="test6">Yellow</label>
+        </p>
+        <p>
+          <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+          <label for="filled-in-box">Filled in</label>
+        </p>
+        <p>
+          <input type="checkbox" id="indeterminate-checkbox">
+          <label for="indeterminate-checkbox">Indeterminate Style</label>
+        </p>
+        <p>
+          <input type="checkbox" id="test7" checked="checked" disabled="disabled" />
+          <label for="test7">Green</label>
+        </p>
+          <p>
+            <input type="checkbox" id="test8" disabled="disabled" />
+            <label for="test8">Brown</label>
+        </p>
+
+        <br />
+        <div class="divider"></div>
+        <br />
+
+        <h4 class="header">Switches</h4>
+
+        <div class="switch">
+          Enabled : 
+          <label>
+            Off
+            <input type="checkbox">
+            <span class="lever"></span> On
+          </label>
+        </div>
+        <br>
+        <!-- Disabled Switch -->
+        <div class="switch">
+          Diabled : 
+          <label>
+            Off
+            <input disabled type="checkbox">
+            <span class="lever"></span> On
+          </label>
+        </div>
+
+        <br />
+        <div class="divider"></div>
+        <br />
+
+        <h4 class="header">File Input</h4>
+
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>File</span>
+            <input type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
+        </div>
+
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>File</span>
+            <input type="file" multiple>
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text" placeholder="Upload one or more files">
+          </div>
+        </div>
+
+        <br />
+        <div class="divider"></div>
+        <br />
+
+        <h4 class="header">Range Selector</h4>
+
+        <p class="range-field">
+          <input type="range" id="test5" min="0" max="100" />
+        </p>
+
+        <br />
+        <div class="divider"></div>
+        <br />
+
+        <h4 class="header">Date Picker</h4>
+
+        <input type="date" class="datepicker">
+
+        <br />
+        <div class="divider"></div>
+        <br />
+
+        <h4 class="header">Character Counter</h4>
+
+        <div class="input-field col s6">
+          <input id="input_text" type="text" length="10">
+          <label for="input_text">Input text</label>
+        </div>
+        <div class="input-field">
+          <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
+          <label for="textarea1">Textarea</label>
+        </div>
+
+      </div>
+    </div>
+    <!-- Card end-->
+
+    <!-- Card
+    ================================================== -->
+    <div class="card">
+      <div class="card-content">
+
+        <div align="center">
+          <h1>Buttons</h1>
+        </div>
+
+        <button class="btn">Button</button>
+
+        <br />
+        <br />
+
+        <button class="btn cyan waves-effect waves-light" type="submit" name="action">
+          Send
+        </button>
+
+      </div>
+    </div>
+    <!-- Card end-->
+
+    <!-- Card
+    ================================================== -->
+    <div class="card">
+      <div class="card-content">
+
+        <div align="center">
+          <h1>Row columns</h1>
+        </div>
+
+        <!-- Row
+        ================================================== -->
+        <div class="row">
+          <div class="col s12 m12 l4">
+            <!-- Card
+            ================================================== -->
+            <div class="card">
+              <div class="card-content">
+                <div align="center">
+                  <h1>Card</h1>
+                </div>
+              </div>
+            </div>
+            <!-- Card end-->
+          </div>
+
+          <div class="col s12 m12 l4">
+            <!-- Card
+            ================================================== -->
+            <div class="card">
+              <div class="card-content">
+                <div align="center">
+                  <h1>Card</h1>
+                </div>
+              </div>
+            </div>
+            <!-- Card end-->
+          </div>
+
+          <div class="col s12 m12 l4">
+            <!-- Card
+            ================================================== -->
+            <div class="card">
+              <div class="card-content">
+                <div align="center">
+                  <h1>Card</h1>
+                </div>
+              </div>
+            </div><!-- Card end-->
+          </div>
+        </div><!-- Row end -->
+
+        <br />
+        <div class="divider"></div>
+        <br />
+
+        <div class="row">
+          <div class="col s12 m12 l6">
+            <!-- Card
+            ================================================== -->
+            <div class="card">
+              <div class="card-content">
+                <h1>Example</h1>
+              </div>
+            </div>
+            <!-- Card end-->
+          </div>
+          <div class="col s12 m12 l6">
+            <!-- Card
+            ================================================== -->
+            <div class="card">
+              <div class="card-content">
+                <h1>Example</h1>
+              </div>
+            </div>
+            <!-- Card end-->
+          </div>
+        </div>
+
+      </div>
+    </div><!-- Card end-->
+
+    <!-- Card
+    ================================================== -->
+    <div class="card">
+      <div class="card-content">
+
+        <h4 class="header">Blockquotes</h4>
+        <blockquote>
+          Xxxx, sssss, dsdad dasddad adad
+          <br>Are the ones who do.
+          <br>- Mr X
+        </blockquote>
+
+      </div>
+    </div>
+    <!-- Card end-->
+
+    <!-- Card
+    ================================================== -->
+    <div class="card">
+      <div class="card-content">
+
+        <div align="center">
+          <h1>Icon Listing</h1>
+          <div id="action" class="row icon-container section">
+            <div class="col s12 m12 l12">
+              <div class="icon-preview col s6 m3"><i class="mdi-action-3d-rotation"></i><span>mdi-action-3d-rotation</span>
+              </div>
+              <div class="icon-preview col s6 m3"><i class="mdi-action-accessibility"></i><span>mdi-action-accessibility</span>
+              </div>
+              <div class="icon-preview col s6 m3"><i class="mdi-action-account-balance"></i><span>mdi-action-account-balance</span>
+              </div>
+              <div class="icon-preview col s6 m3"><i class="mdi-action-account-balance-wallet"></i><span>mdi-action-account-balance-wallet</span>
+              </div>
+            </div>
+          </div>
+          <a href="icons-listing.html">
+            <i class="mdi-hardware-keyboard-arrow-right"></i>
+            See more...
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Card end-->
+
+    <!-- Card
+    ================================================== -->
+    <div class="card">
+      <div class="card-content">
+
+        <div align="center">
+          <h1>Alerts</h1>
+        </div>
+
+        <div id="ui-alert" class="section">
+          <div class="row">
+            <div class="col s12 m4 l4">
+              <p><strong>SIMPLE</strong></p>
+              <p>Add materialize lighten color contextual class.</p>
+              
+              <div id="card-alert" class="card light-blue lighten-5">
+                <div class="card-content light-blue-text">
+                  <p>NEWS : You have done 5 actions.</p>
+                </div>
+              </div>
+              
+              <div id="card-alert" class="card deep-purple lighten-5">
+                <div class="card-content deep-purple-text">
+                  <p>INFO : You have 18 messages</p>
+                </div>
+                <button type="button" class="close deep-purple-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              
+              <div id="card-alert" class="card green lighten-5">
+                <div class="card-content green-text">
+                  <p>SUCCESS : The page has been added.</p>
+                </div>
+                <button type="button" class="close green-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              
+              <div id="card-alert" class="card red lighten-5">
+                <div class="card-content red-text">
+                  <p>DANGER : The daily report has failed</p>
+                </div>
+                <button type="button" class="close red-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              
+              <div id="card-alert" class="card orange lighten-5">
+                <div class="card-content orange-text">
+                  <p>WARNING : Bandwidth limit exceeded</p>
+                </div>
+                <button type="button" class="close orange-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </div>
+          
+            <div class="col s12 m4 l4">
+              <p><strong>DARK</strong></p>
+              <p>Add materialize base color contextual class.</p>
+              
+              <div id="card-alert" class="card light-blue">
+                <div class="card-content white-text">
+                  <p>NEWS : You have done 5 actions.</p>
+                </div>
+              </div>
+            
+              <div id="card-alert" class="card deep-purple">
+                <div class="card-content white-text">
+                  <p>INFO : You have 18 messages</p>
+                </div>
+                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            
+              <div id="card-alert" class="card green">
+                <div class="card-content white-text">
+                  <p>SUCCESS : The page has been added.</p>
+                </div>
+                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            
+              <div id="card-alert" class="card red">
+                <div class="card-content white-text">
+                  <p>DANGER : The daily report has failed</p>
+                </div>
+                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              
+              <div id="card-alert" class="card orange">
+                <div class="card-content white-text">
+                  <p>WARNING : Bandwidth limit exceeded</p>
+                </div>
+                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </div>
+              
+            <div class="col s12 m4 l4">
+              <p><strong>WITH ICON</strong></p>
+              <p>Add materialize icons class.</p>
+              
+              <div id="card-alert" class="card light-blue">
+                <div class="card-content white-text">
+                  <p><i class="mdi-social-notifications"></i> NEWS : You have done 5 actions.</p>
+                </div>
+              </div>
+              
+              <div id="card-alert" class="card deep-purple">
+                <div class="card-content white-text">
+                  <p><i class="mdi-action-info-outline"></i> INFO : You have 18 messages</p>
+                </div>
+                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              
+              <div id="card-alert" class="card green">
+                <div class="card-content white-text">
+                  <p><i class="mdi-navigation-check"></i> SUCCESS : The page has been added.</p>
+                </div>
+                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              
+              <div id="card-alert" class="card red">
+                <div class="card-content white-text">
+                  <p><i class="mdi-alert-error"></i> DANGER : The daily report has failed</p>
+                </div>
+                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              
+              <div id="card-alert" class="card orange">
+                <div class="card-content white-text">
+                  <p><i class="mdi-alert-warning"></i> WARNING : Bandwidth limit exceeded</p>
+                </div>
+                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12 m4 l4">
+              <p><strong>WITH TITLE</strong></p>
+              <p>Add title class.</p>
+              
+              <div id="card-alert" class="card cyan lighten-5">
+                <div class="card-content cyan-text darken-1">
+                  <span class="card-title cyan-text darken-1">Some Message</span>
+                  <p>Lorem ipsum Minim ad pariatur eiusmod ea ut nulla aliqua est quis id dolore minim voluptate.</p>
+                </div>
+                <button type="button" class="close cyan-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              
+              <div id="card-alert" class="card cyan lighten-5">
+                <div class="card-content cyan-text darken-1">
+                  <span class="card-title cyan-text darken-1">Some Message</span>
+                  <p>Lorem ipsum Minim ad pariatur eiusmod ea ut nulla aliqua est quis id dolore minim voluptate.</p>
+                </div>
+                <button type="button" class="close cyan-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              
+              <div id="card-alert" class="card deep-purple">
+                <div class="card-content white-text">
+                  <span class="card-title white-text darken-1">Some Message</span>
+                  <p>Lorem ipsum Minim ad pariatur eiusmod ea ut nulla aliqua est quis id dolore minim voluptate.</p>
+                </div>
+                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              
+              <div id="card-alert" class="card green">
+                <div class="card-content white-text">
+                  <span class="card-title white-text darken-1"><i class="mdi-social-notifications"></i>  Some Message</span>
+                  <p>Lorem ipsum Minim ad pariatur eiusmod ea ut nulla aliqua est quis id dolore minim voluptate.</p>
+                </div>
+                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="col s12 m4 l4">
+              <p><strong>WITH ACTION BUTTONS</strong></p>
+              <p>Add materialize button for actions.</p>
+              <div id="card-alert" class="card pink lighten-5">
+                <div class="card-content pink-text darken-1">
+                  <span class="card-title pink-text darken-1">Some Message</span>
+                  <p>Lorem ipsum Minim ad pariatur eiusmod ea ut nulla aliqua est quis id dolore minim voluptate.</p>
+                </div>
+                <div class="card-action pink lighten-4">
+                  <a href="#" class="pink-text">Ok</a>
+                  <a href="#" class="pink-text">Cancel</a>
+                </div>
+                <button type="button" class="close pink-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              
+              <div id="card-alert" class="card deep-purple">
+                <div class="card-content white-text">
+                  <span class="card-title white-text darken-1">Some Message</span>
+                  <p>Lorem ipsum Minim ad pariatur eiusmod ea ut nulla aliqua est quis id dolore minim voluptate.</p>
+                </div>
+                <div class="card-action deep-purple darken-2">
+                  <a class="waves-effect waves-light  btn white-text">Ok</a>
+                  <a class="waves-effect waves-light  btn white-text">Cancel</a>
+                </div>
+                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              
+              <div id="card-alert" class="card green">
+                <div class="card-content white-text">
+                  <span class="card-title white-text darken-1"><i class="mdi-social-notifications"></i>  Some Message</span>
+                  <p>Lorem ipsum Minim ad pariatur eiusmod ea ut nulla aliqua est quis id dolore minim voluptate.</p>
+                </div>
+                <div class="card-action green darken-2">
+                  <a class="btn-flat waves-effect light-blue white-text"><i class="mdi-navigation-check left"></i> Ok</a>
+                  <a class="btn-flat waves-effect red accent-2 white-text"><i class="mdi-content-clear left"></i> Cancle</a>
+                </div>
+                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="col s12 m4 l4">
+              <p><strong>WITH AVATAR</strong></p>
+              <p>Add avatar on alerts.</p>
+              
+              <div id="card-alert" class="card cyan lighten-5">
+                <div class="card-content cyan-text">
+                  <p class="single-alert">
+                    <img src="images/avatar.jpg" alt="avatar" class="alert-circle responsive-img valign profile-image"/>
+                    <span>You have new task.</span>
+                  </p>
+                </div>
+                <button type="button" class="close cyan-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              
+              <div id="card-alert" class="card light-blue">
+                <div class="card-content white-text">
+                  <p class="single-alert">
+                    <img src="images/avatar.jpg" alt="avatar" class="alert-circle responsive-img valign profile-image"/>
+                    <span>You have new task.</span>
+                  </p>
+                </div>
+                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              
+              <div id="card-alert" class="card cyan">
+                <div class="card-content white-text">
+                  <img src="images/avatar.jpg" alt="avatar" class="alert-circle responsive-img valign profile-image"/>
+                  <span class="card-title white-text darken-1">Some Message</span>
+                  <p>Lorem ipsum Minim ad pariatur eiusmod ea ut nulla aliqua est quis id dolore minim voluptate.</p>
+                </div>
+                <div class="card-action cyan darken-1">
+                  <a href="#" class="white-text">Ok</a>
+                  <a href="#" class="white-text">Cancel</a>
+                </div>
+                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              
+              <div id="card-alert" class="card green">
+                <div class="card-content white-text">
+                  <img src="images/avatar.jpg" alt="avatar" class="alert-circle responsive-img valign profile-image"/>
+                  <span class="card-title white-text darken-1"><i class="mdi-social-notifications"></i>  Some Message</span>
+                  <p>Lorem ipsum Minim ad pariatur eiusmod ea ut nulla aliqua est quis id dolore minim voluptate.</p>
+                </div>
+                <div class="card-action green darken-2">
+                  <a class="btn-flat waves-effect light-blue white-text"><i class="mdi-navigation-check left"></i> Ok</a>
+                  <a class="btn-flat waves-effect red accent-2 white-text"><i class="mdi-content-clear left"></i> Cancle</a>
+                </div>
+                <button type="button" class="close white-text" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Card end-->
+
+    <!-- Card
+    ================================================== -->
+    <div class="card">
+      <div class="card-content">
+      </div>
+    </div>
+    <!-- Card end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container">
+          <span>Some text 1 <a class="grey-text text-lighten-4" href="#" target="_blank">Link 1</a> Some text 2</span>
+          <span class="right"> Some text 3 <a class="grey-text text-lighten-4" href="http://geekslabs.com/">Link 2</a></span>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- End container -->
+
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+        <span>Some text 1 <a class="grey-text text-lighten-4" href="#" target="_blank">Link 1</a> Some text 2</span>
+        <span class="right"> Some text 3 <a class="grey-text text-lighten-4" href="http://geekslabs.com/">Link 2</a></span>
+      </div>
+    </div>
+  </footer>
+    
+  <!-- jQuery Library -->
+  <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>    
+  <!--materialize js-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!--prism
+  <script type="text/javascript" src="js/prism/prism.js"></script>-->
+  <!--scrollbar-->
+  <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <!-- chartist -->
+  <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>   
+  
+  <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+  <script type="text/javascript" src="js/plugins.min.js"></script>
+  <!--custom-script.js - Add your own theme custom JS-->
+  <script type="text/javascript" src="js/custom-script.js"></script>
+    
+</body>
+</html>
