@@ -33,3 +33,5 @@
 
 ## Copyright and license
 Code copyright 2017 Materialize. Code released under the MIT license.
+
+Demo: https://argenisosorio.github.io/materialize_templates_examples/
